@@ -1,5 +1,7 @@
 package app;
 
+import entities.Triangle;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -9,7 +11,9 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        double xA, xB, xC, yA, yB, yC;
+        Triangle x, y;
+        x = new Triangle();
+        y = new Triangle();
 
         System.out.println("Enter the measures of triangle X:");
         xA = sc.nextDouble();
